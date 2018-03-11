@@ -1,5 +1,19 @@
 # HTML5 / CSS3 Class
 
+### Course Schedule
+
+* Time: 6:30pm - 9:30pm
+* Wk 1: 3/21
+* Wk 2: 3/28
+* Wk 3: 4/4
+* Wk 4: 4/11
+* Wk 5: 4/18
+* Wk 6: 4/25
+* Wk 7: 5/2
+* Wk 8: 5/9
+* Wk 9: 5/16
+* Wk 10: 5/23
+
 ### Course Work
 
 * Wk 1: Intro/Code Editor
