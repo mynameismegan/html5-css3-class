@@ -26,3 +26,7 @@
 * Wk 8: JavaScript & jQuery
 * Wk 9: Deploy Final Site
 * wk 10: Final Presentation
+
+### Course Book
+
+[HTML5 and CSS3 Seventh Edition Visual QuickStart Guide](https://github.com/qcgm1978/html5-css3/blob/master/HTML5%20and%20CSS3%20Seventh%20Edition%20Visual%20QuickStart%20Guide.Dec.2011.pdf)
