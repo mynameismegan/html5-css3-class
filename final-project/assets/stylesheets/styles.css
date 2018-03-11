@@ -19,6 +19,16 @@ body.homepage{
   background-size: cover;
 }
 
+.container{
+  margin: auto;
+}
+
+@media (min-width: 1960px){
+  .container{
+    width: 1920px;
+  }
+}
+
 a {
   text-decoration: none;
 }
@@ -36,7 +46,6 @@ a {
 }
 
 .logo {
-  width: 25%;
   height: 45px;
   float: left;
   font-family: 'Rozha One', serif;
@@ -51,7 +60,6 @@ a {
 }
 
 nav{
-  width: 75%;
   height: auto;
   font-size: 0;
   float: right;

@@ -3,22 +3,29 @@
 <head>
   <title>Deftones</title>
   <link href="https://fonts.googleapis.com/css?family=Mina|Rozha+One" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/stylesheets/flexboxgrid.min.css" />
   <link rel="stylesheet" href="./assets/stylesheets/styles.css" />
 </head>
 <body>
   <div class="header">
-    <div class="logo">
-      <a href="index.html">Deftones</a>
+    <div class="container">
+      <div class="row">
+        <div class="logo col-xs-4">
+          <a href="index.html">Deftones</a>
+        </div>
+        <nav class="col-xs-8">
+          <a href="about.html">About</a>
+          <a href="media.html">Media</a>
+          <a href="merch.html">Merch</a>
+          <a class="active" href="tour-dates.html">Tour Dates</a>
+        </nav>
+      </div>
     </div>
-    <nav>
-      <a href="about.html">About</a>
-      <a href="media.html">Media</a>
-      <a href="merch.html">Merch</a>
-      <a class="active" href="tour-dates.html">Tour Dates</a>
-    </nav>
   </div>
   <main>
-    <h1>Tour Dates</h1>
+    <div class="container">
+      <h1>Tour Dates</h1>
+    </div>
   </main>
 </body>
 </html>
