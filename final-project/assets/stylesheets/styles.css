@@ -1,0 +1,84 @@
+/* font-family: 'Rozha One', serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Mina', sans-serif;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body.homepage{
+  background: url('http://placehold.it/1500x2500') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  width: 100%;
+  height: 45px;
+  padding: 0 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.logo {
+  width: 25%;
+  height: 45px;
+  float: left;
+  font-family: 'Rozha One', serif;
+}
+
+.logo > a {
+  display: inline-block;
+  height: 100%;
+  line-height: 45px;
+  color: #fff;
+  font-size: 24px;
+}
+
+nav{
+  width: 75%;
+  height: auto;
+  font-size: 0;
+  float: right;
+  display: inline-block;
+  text-align: right;
+}
+
+nav > a {
+  height: 100%;
+  display: inline-block;
+  padding: 0 10px;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 45px;
+}
+
+nav > a:hover, nav > a.active{
+  background-color: rgba(0,0,0, 0.75);
+}
+
+.image-responsive{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+main{
+  padding-top: 45px;
+}
