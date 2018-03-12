@@ -3,19 +3,14 @@
 }
 
 html, body {
+  width: 100%;
+  height: 100%;
+
   font-family: 'Mina', sans-serif;
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
   margin: 0;
   padding: 0;
-}
-
-body.homepage{
-  background: url('http://placehold.it/1500x2500') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 .secondary-font{
@@ -151,8 +146,6 @@ section{
   background-size: cover;
 }
 
-
-
 .history-image{
   max-width: 250px;
   float: left;
@@ -165,4 +158,66 @@ section{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.video-container {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.video-overlay{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-overlay:before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  background: #000000;
+  opacity: .75;
+}
+
+.home-logo {
+  z-index: 2;
+  position: absolute;
+  text-shadow: 2px 0px 15px #666;
+  transition: all .5s ease-in-out;
+}
+
+@media (min-width: 720px){
+  .home-logo{
+    width: 30vw;
+    height: 30vh;
+  }
+}
+
+@keyframes faderAnimation {
+  0%   { opacity:.85; }
+  50%  { opacity:.25; }
+  100% { opacity:.95; }
+}
+@-moz-keyframes faderAnimation{
+  0%   { opacity:.85; }
+  50%  { opacity:.25; }
+  100% { opacity:.95; }
+}
+@-webkit-keyframes faderAnimation{
+  0%   { opacity:.85; }
+  50%  { opacity:.25; }
+  100% { opacity:.95; }
+}
+.animate-fader {
+   -webkit-animation: faderAnimation 5s infinite;
+   -moz-animation: faderAnimation 5s infinite;
+   -o-animation: faderAnimation 5s infinite;
+    animation: faderAnimation 5s infinite;
 }
