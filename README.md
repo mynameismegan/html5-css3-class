@@ -70,7 +70,7 @@ You will take this band or musisc groups and create a site containing the follow
 * Wk 7: Deployment/GitHub, setup hosting and put code on GitHub
   * HW: Complete Homepage and Discography pages
 * Wk 8: JavaScript & jQuery
-  * HW: Complete Merch Store, Product Detail, and Media pages
+  * HW: Complete Merch Store, Product Detail, and Media pages. Build out any components requiring JavaScript (Mobile Menu, Filter, Sliders, Lightboxes, etc)
 * Wk 9: Deploy Final Site in class
   * HW: Finalize any remaining final project items
 * Wk 10: Final Presentation
