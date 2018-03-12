@@ -27,12 +27,6 @@ body.homepage{
   padding: 0 20px;
 }
 
-/* @media (min-width: 1960px){
-  .container{
-    width: 1920px;
-  }
-} */
-
 a {
   text-decoration: none;
 }
@@ -105,10 +99,34 @@ section{
 }
 
 .page-banner{
+  width: 100%;
+  height: 300px;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+}
+
+.page-banner:after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0,0,0, 0.75);
+}
+
+@media (min-width: 1960px){
+  .page-banner{
+    height: 600px;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1959px){
+  .page-banner{
+    height: 450px;
+  }
 }
 
 .page-banner > .banner-title {
@@ -126,38 +144,25 @@ section{
 }
 
 .about-banner{
-  width: 100%;
-  height: 300px;
-  position: relative;
-  background: url('../images/about/band-group-shot.jpg') no-repeat center center;
+  background: url('../images/about/banner.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-.about-banner:after{
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-color: rgba(0,0,0, 0.75);
-}
 
-@media (min-width: 1960px){
-  .about-banner{
-    height: 600px;
-  }
-}
-
-@media (min-width: 720px) and (max-width: 1959px){
-  .about-banner{
-    height: 450px;
-  }
-}
 
 .history-image{
   max-width: 250px;
   float: left;
   padding-right: 10px;
+}
+
+.tour-dates-banner{
+  background: url('../images/tour-dates/banner.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
