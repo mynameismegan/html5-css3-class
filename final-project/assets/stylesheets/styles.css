@@ -71,6 +71,7 @@ nav > a {
   font-size: 14px;
   text-decoration: none;
   line-height: 45px;
+  transition: all .25s ease-in-out;
 }
 
 nav > a:hover, nav > a.active{
@@ -174,6 +175,11 @@ section{
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background: url('../images/home/home.jpg') no-repeat center center; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .video-overlay:before{
