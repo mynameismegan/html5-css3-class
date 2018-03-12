@@ -1,7 +1,4 @@
-/* font-family: 'Rozha One', serif; */
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -9,6 +6,8 @@ html, body {
   font-family: 'Mina', sans-serif;
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
 }
 
 body.homepage{
@@ -19,15 +18,20 @@ body.homepage{
   background-size: cover;
 }
 
-.container{
-  margin: auto;
+.secondary-font{
+  font-family: 'Rozha One', serif;
 }
 
-@media (min-width: 1960px){
+.container{
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* @media (min-width: 1960px){
   .container{
     width: 1920px;
   }
-}
+} */
 
 a {
   text-decoration: none;
@@ -41,7 +45,10 @@ a {
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(33, 33, 33, 0.5);
+  -webkit-box-shadow: 0px 5px 35px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 5px 35px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.75);
   z-index: 10;
 }
 
@@ -81,12 +88,76 @@ nav > a:hover, nav > a.active{
   background-color: rgba(0,0,0, 0.75);
 }
 
+section{
+  width: 100%;
+  height: auto;
+  margin: 25px auto;
+}
+
+.section-title{
+  margin-bottom: 15px;
+}
+
 .image-responsive{
   width: 100%;
   height: auto;
   display: block;
 }
 
-main{
-  padding-top: 45px;
+.page-banner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-banner > .banner-title {
+  color: #fff;
+  font-size: 32px;
+  text-shadow: 2px 0px 15px #666;
+  opacity: .5;
+  z-index: 1;
+}
+
+@media (min-width: 720px){
+  .page-banner > .banner-title {
+    font-size: 60px;
+  }
+}
+
+.about-banner{
+  width: 100%;
+  height: 300px;
+  position: relative;
+  background: url('../images/about/band-group-shot.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.about-banner:after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0,0,0, 0.75);
+}
+
+@media (min-width: 1960px){
+  .about-banner{
+    height: 600px;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1959px){
+  .about-banner{
+    height: 450px;
+  }
+}
+
+.history-image{
+  max-width: 250px;
+  float: left;
+  padding-right: 10px;
 }
