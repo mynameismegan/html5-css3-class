@@ -42,8 +42,9 @@ a {
 }
 
 .logo {
-  height: 45px;
+  max-height: 45px;
   float: left;
+  padding: 5px 0;
   font-family: 'Rozha One', serif;
 }
 
