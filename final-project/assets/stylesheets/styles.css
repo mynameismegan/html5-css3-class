@@ -176,7 +176,6 @@ section{
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background: url('../images/home/home.jpg') no-repeat center center; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -227,4 +226,86 @@ section{
    -moz-animation: faderAnimation 5s infinite;
    -o-animation: faderAnimation 5s infinite;
     animation: faderAnimation 5s infinite;
+}
+
+.discography-banner {
+  background: url('../images/discography/banner.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.album{
+  position: relative;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .album {
+    text-align: left;
+  }
+}
+
+.album-cover{
+  max-width: 275px;
+  max-height: 275px;
+  border-radius: 8px;
+  box-shadow: 0 45px 100px rgba(0, 0, 0, 0.4);
+  transition: all .3s ease-in-out;
+}
+
+@media (min-width: 1024px){
+  .album-cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.album-cover:hover{
+  max-width: 300px;
+  max-height: 300px;
+  box-shadow: 0 75px 175px rgba(0, 0, 0, 0.4);
+}
+
+ul.album-details{
+  position: relative;
+  z-index: 10;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 1024px){
+  ul.album-details {
+    margin-left: 320px;
+  }
+}
+
+.album-title{
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+ul.track-listings{
+  margin-top: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+ul.track-listings > li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+span.track-number {
+  margin-right: 10px;
+}
+
+ul-track-listings > li > .track-time {
+  text-align: right;
 }
