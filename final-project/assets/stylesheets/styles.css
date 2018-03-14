@@ -237,8 +237,10 @@ section{
 }
 
 .album{
+  display: block;
   position: relative;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 @media (min-width: 1024px) {
