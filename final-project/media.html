@@ -5,6 +5,7 @@
   <title>Deftones</title>
   <link href="https://fonts.googleapis.com/css?family=Mina|Rozha+One" rel="stylesheet">
   <link rel="stylesheet" href="./assets/stylesheets/flexboxgrid.min.css" />
+  <link rel="stylesheet" href="./assets/stylesheets/lightbox.min.css" />
   <link rel="stylesheet" href="./assets/stylesheets/styles.css" />
 </head>
 <body>
@@ -25,9 +26,70 @@
     </div>
   </div>
   <main>
+    <div class="page-banner media-banner">
+      <h1 class="secondary-font banner-title">Media</h1>
+    </div>
     <div class="container">
-      <h1>Media</h1>
+      <h1>Photos</h1>
+      <div class="media-list">
+        <div class="media-card-wrapper">
+          <a class="media-card" href="./assets/images/media/1.jpg" data-lightbox="deftones">
+            <img src="./assets/images/media/1.jpg" />
+          </a>
+        </div>
+        <div class="media-card-wrapper">
+          <a class="media-card" href="./assets/images/media/2.png" data-lightbox="deftones">
+            <img src="./assets/images/media/2.png" />
+          </a>
+        </div>
+        <div class="media-card-wrapper">
+          <a class="media-card" href="./assets/images/media/3.jpg" data-lightbox="deftones">
+            <img src="./assets/images/media/3.jpg" />
+          </a>
+        </div>
+        <div class="media-card-wrapper">
+          <a class="media-card" href="./assets/images/media/4.jpg" data-lightbox="deftones">
+            <img src="./assets/images/media/4.jpg" />
+          </a>
+        </div>
+        <div class="media-card-wrapper">
+          <a class="media-card" href="./assets/images/media/5.jpg" data-lightbox="deftones">
+            <img src="./assets/images/media/5.jpg" />
+          </a>
+        </div>
+        <div class="media-card-wrapper">
+          <a class="media-card" href="./assets/images/media/6.jpg" data-lightbox="deftones">
+            <img src="./assets/images/media/6.jpg" />
+          </a>
+        </div>
+        <div class="media-card-wrapper">
+          <a class="media-card" href="./assets/images/media/7.jpg" data-lightbox="deftones">
+            <img src="./assets/images/media/7.jpg" />
+          </a>
+        </div>
+        <div class="media-card-wrapper">
+          <a class="media-card" href="./assets/images/media/8.jpg" data-lightbox="deftones">
+            <img src="./assets/images/media/8.jpg" />
+          </a>
+        </div>
+      </div>
+      <h1>Videos</h1>
+      <div class="media-list">
+        <iframe width="500" height="315" src="https://www.youtube.com/embed/KvknOXGPzCQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe width="500" height="315" src="https://www.youtube.com/embed/XOzs1FehYOA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe width="500" height="315" src="https://www.youtube.com/embed/qksTlo_1Tpw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe width="500" height="315" src="https://www.youtube.com/embed/wThg2FgIKuI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+
     </div>
   </main>
 </body>
+<script src="./assets/javascripts/jquery-3.3.1.min.js"></script>
+<script src="./assets/javascripts/lightbox.min.js"></script>
+<script>
+$(document).ready(function(){
+  console.log('jquery is running on media page');
+});
+
+</script>
 </html>
