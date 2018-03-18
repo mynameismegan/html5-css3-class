@@ -12,10 +12,15 @@
   <div class="header">
     <div class="container">
       <div class="row">
-        <div class="col-xs-4">
+        <div class="col-xs-12 col-sm-4">
           <a href="index.html"><img class="logo" src="./assets/images/deftones-logo.svg" alt="Deftones text logo" /></a>
+          <div id="MenuIcon" class="mobile-menu-icon">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
         </div>
-        <nav class="col-xs-8">
+        <nav id="MainMenu" class="col-xs-12 col-sm-8">
           <a href="about.html">About</a>
           <a href="discography.html">Discography</a>
           <a class="active" href="media.html">Media</a>
@@ -86,10 +91,6 @@
 </body>
 <script src="./assets/javascripts/jquery-3.3.1.min.js"></script>
 <script src="./assets/javascripts/lightbox.min.js"></script>
-<script>
-$(document).ready(function(){
-  console.log('jquery is running on media page');
-});
-
-</script>
+<script src="./assets/javascripts/lodash.js"></script>
+<script src="./assets/javascripts/mobile-menu.js"></script>
 </html>
