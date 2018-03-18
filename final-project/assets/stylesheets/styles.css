@@ -500,6 +500,8 @@ ul.merch-controls > li {
 }
 
 .filtr-item > img {
+  width: 250px;
+  height: 250px;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
@@ -538,11 +540,6 @@ ul.merch-controls > li {
 
 .filtr-item.--sold-out:hover{
   cursor: not-allowed;
-}
-
-.merch-item img {
-  width: 100%;
-  height: auto;
 }
 
 button:focus {

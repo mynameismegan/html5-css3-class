@@ -31,42 +31,46 @@
       <h1 class="secondary-font banner-title">Merch Store</h1>
     </div>
     <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <ul class="merch-controls">
+            <li data-filter="all">
+              <button class="merch-ctrl-btn active all-icon">All items</button>
+            </li>
+            <li data-filter="topwear">
+              <button class="merch-ctrl-btn">
+                <span>Topwear</span>
+                <img src="./assets/images/merch/icons/topwear-icon.svg" />
+              </button>
+            </li>
+            <li data-filter="bottomwear">
+              <button class="merch-ctrl-btn bottomwear-icon">
+                <span>Bottomwear</span>
+                <img src="./assets/images/merch/icons/bottomwear-icon.svg" />
+              </button>
+            </li>
+            <li data-filter="headwear">
+              <button class="merch-ctrl-btn headwear-icon">
+                <span>Headwear</span>
+                <img src="./assets/images/merch/icons/headwear-icon.svg" />
+              </button>
+            </li>
+            <li data-filter="footwear">
+              <button class="merch-ctrl-btn footwear-icon">
+                <span>Footwear</span>
+                <img src="./assets/images/merch/icons/footwear-icon.svg" />
+              </button>
+            </li>
+            <li data-filter="accessories">
+              <button class="merch-ctrl-btn accessories-icon">
+                <span>Accessories</span>
+                <img src="./assets/images/merch/icons/accessories-icon.svg" />
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-      <ul class="merch-controls">
-        <li data-filter="all">
-          <button class="merch-ctrl-btn active all-icon">All items</button>
-        </li>
-        <li data-filter="topwear">
-          <button class="merch-ctrl-btn">
-            <span>Topwear</span>
-            <img src="./assets/images/merch/icons/topwear-icon.svg" />
-          </button>
-        </li>
-        <li data-filter="bottomwear">
-          <button class="merch-ctrl-btn bottomwear-icon">
-            <span>Bottomwear</span>
-            <img src="./assets/images/merch/icons/bottomwear-icon.svg" />
-          </button>
-        </li>
-        <li data-filter="headwear">
-          <button class="merch-ctrl-btn headwear-icon">
-            <span>Headwear</span>
-            <img src="./assets/images/merch/icons/headwear-icon.svg" />
-          </button>
-        </li>
-        <li data-filter="footwear">
-          <button class="merch-ctrl-btn footwear-icon">
-            <span>Footwear</span>
-            <img src="./assets/images/merch/icons/footwear-icon.svg" />
-          </button>
-        </li>
-        <li data-filter="accessories">
-          <button class="merch-ctrl-btn accessories-icon">
-            <span>Accessories</span>
-            <img src="./assets/images/merch/icons/accessories-icon.svg" />
-          </button>
-        </li>
-      </ul>
       <div class="filtr-container row">
         <div class="col-xs-12 col-sm-4 col-md-3 filtr-item --sold-out" data-category="topwear" data-sort="value">
           <img
@@ -139,8 +143,7 @@
 <script src="./assets/javascripts/jquery.filterizr.min.js"></script>
 <script>
   $(document).ready(function() {
-    $('.filtr-container').filterizr({
-    });
+    $('.filtr-container').filterizr({});
     $('.merch-ctrl-btn').click(function(){
       if($(this).hasClass('active')){
         return false;
