@@ -380,6 +380,7 @@ ul-track-listings > li > .track-time {
   margin: 0 auto 25px;
   border-radius: 8px;
   overflow: hidden;
+  z-index: 0;
   transition: all .3s ease-in-out;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
 }
